@@ -1,38 +1,24 @@
 {
-    "$schema": "https://schema.management.azure.com/schemas/2018-05-01/subscriptionDeploymentParameters.json#",
-    "contentVersion": "1.0.0.0",
-    "parameters": {
-        "mspName": {
-            "value": "krnese - Interstellar"
-        },
-        "mspOfferDescription": {
-            "value": "krnese"
-        },
-        "managedByTenantId": {
-            "value": "d6ad82f3-42af-4a15-ac1e-49e6c08f624e"
-        },
-        "authorizations": {
-            "value": [
-                {
-                    "principalId": "8414a158-d79d-4682-a0d3-b036663e76af",
-                    "principalIdDisplayName": "Tier 1 Support",
-                    "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c"
-                },
-                {
-                    "principalId": "a762c9f6-88aa-4340-b775-44b8151afe00",
-                    "principalIdDisplayName": "MSP PIM Group",
-                    "roleDefinitionId": "acdd72a7-3385-48ef-bd42-f606fba81ae7"
-                },
-                {
-                    "principalId": "8414a158-d79d-4682-a0d3-b036663e76af",
-                    "principalIdDisplayName": "Policy Automation Account",
-                    "roleDefinitionId": "18d7d88d-d35e-4fb5-a5c3-7773c20a72d9",
-                    "delegatedRoleDefinitionIds": [
-                        "b24988ac-6180-42a0-ab88-20f7382dd24c",
-                        "92aaf0da-9dab-42b6-94a3-d43ce8d16293"
-                    ]
-                }                
-            ]
+  "$schema": "https://schema.management.azure.com/schemas/2019-04-01/deploymentParameters.json#",
+  "contentVersion": "1.0.0.0",
+  "parameters": {
+    "mspOfferName": {
+      "value": "Rock RMS Managed Hosting"
+    },
+    "mspOfferDescription": {
+      "value": "Managed Rock RMS Hosting provided by 9 Embers"
+    },
+    "managedByTenantId": {
+      "value": "3422081e-2212-400e-aa1a-3fd4ae6d940a"
+    },
+    "authorizations": {
+      "value": [
+        {
+          "principalId": "5f4cb0d6-6c87-4734-8f88-d004e1b27fa1",
+          "roleDefinitionId": "b24988ac-6180-42a0-ab88-20f7382dd24c",
+          "principalIdDisplayName": "9_Embers_Service_Role"
         }
+      ]
     }
+  }
 }
